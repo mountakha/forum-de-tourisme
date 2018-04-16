@@ -7,7 +7,7 @@
                 height: auto;
                 margin: 0;
                 padding: 0;
-                color: white;
+                color: orange;
                 font-family: Arial, Helvetica, sans-serif;
             }
             
@@ -17,13 +17,13 @@
             
             .topnav {
                 overflow: hidden;
-                background-color: #273c75;
+                background-color: #242831;
             }
             
             .topnav a {
                 float: left;
                 display: block;
-                color: black;
+                color: orange;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
@@ -32,12 +32,12 @@
             
             .topnav a:hover {
                 background-color: #ddd;
-                color: black;
+                color: orange;
             }
             
             .topnav a.active {
-                background-color: #273c75;
-                color: white;
+                background-color: #242831;
+                color: orange;
             }
             
             .topnav .search-container {
@@ -86,14 +86,15 @@
             }
             
             .footer {
-                height: 100px;
-                left: 0;
-                bottom: 0;
                 width: 100%;
-                background-color: #0652DD;
-                color: white;
+                height: 100px;
                 text-align: center;
-                margin-top: -20px;
+                background-color: #242831;
+                color: orange;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                left: 0;
             }
             
             .bloctxt {
@@ -101,16 +102,23 @@
                 width: 60%;
                 height: 5px;
                 margin-left: 20px;
+                color: orange;
             }
             
             .bloctxt:nth-child(odd) {
-                background: #2c3e50;
+                color: orange;
+                background: #242831;
                 border: 2px solid white;
             }
             
-            .bloctxt:nth-child(4n+0) {
-                background: #34495e;
+            .bloctxt:nth-child(even) {
+                color: orange;
+                background: #242831;
                 border: 2px solid white;
+            }
+            
+            .bloctxt :hover {
+                background-color: black;
             }
             
             #wrapper {
@@ -130,11 +138,9 @@
             .bloctxt1 {
                 color: azure;
                 padding: 50px;
-                width: 20%;
-                height: 100px;
-                margin-top: -850px;
-                min-width: 10px;
-                background: black;
+                width: 25%;
+                height: 200px;
+                margin-top: -950px;
             }
             
             a {
@@ -142,22 +148,20 @@
             }
             
             .bloctxt2 {
-                color: azure;
+                color: orange;
                 padding: 50px;
-                width: 20%;
+                width: 25%;
                 height: 200px;
-                margin-top: -750px;
+                margin-top: -650px;
             }
             
             .bloctxt2:nth-child(odd) {
-                color: azure;
-                background: black;
+                color: orange;
                 border: 2px solid white;
             }
             
             .bloctxt2:nth-child(even) {
-                color: azure;
-                background: #0a3d62;
+                color: orange;
                 border: 2px solid white;
                 border-radius: 15px;
             }
@@ -254,12 +258,6 @@
                 float: right;
             }*/
             /* Style the container */
-            
-            .container {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 20px;
-            }
             /* Floating column for labels: 25% width */
             
             .col-25 {
@@ -293,22 +291,20 @@
             }
             
             .bloctxt3 {
-                color: azure;
+                color: orange;
                 padding: 50px;
-                width: 20%;
+                width: 25%;
                 height: 200px;
                 margin-top: -350px;
             }
             
             .bloctxt3:nth-child(odd) {
-                color: azure;
-                background: black;
+                color: orange;
                 border: 2px solid white;
             }
             
             .bloctxt3:nth-child(even) {
                 color: azure;
-                background: black;
                 border: 2px solid white;
                 border-radius: 15px;
             }
@@ -333,7 +329,7 @@
             }
             
             .ex {
-                background: #182C61;
+                background: #f6b93b;
                 width: 100%;
                 height: 100px;
             }
@@ -376,19 +372,128 @@
             }
             
             table {
+                background: #242831;
                 border-collapse: collapse;
                 border-spacing: 0;
                 width: 100%;
                 border: 1px solid #242831;
-                color: red;
+                color: orange;
             }
             
             th,
             td {
+                border: 2px solid black;
                 text-align: left;
                 padding: 16px;
             }
             
             tr:nth-child(even) {
                 background-color: #242831;
+            }
+            
+            .icon-bar {
+                position: fixed;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            
+            .icon-bar a {
+                display: block;
+                text-align: center;
+                padding: 16px;
+                transition: all 0.3s ease;
+                color: white;
+                font-size: 20px;
+            }
+            
+            .icon-bar a:hover {
+                background-color: #000;
+            }
+            
+            .facebook {
+                background: #3B5998;
+                color: white;
+            }
+            
+            .twitter {
+                background: #55ACEE;
+                color: white;
+            }
+            
+            .google {
+                background: #dd4b39;
+                color: white;
+            }
+            
+            .linkedin {
+                background: #007bb5;
+                color: white;
+            }
+            
+            .youtube {
+                background: #bb0000;
+                color: white;
+            }
+            
+            .content {
+                margin-left: 75px;
+                font-size: 30px;
+            }
+            
+            .ok .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 500px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+            
+            .ok .title {
+                color: grey;
+                font-size: 18px;
+            }
+            
+            .ok button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+            
+            .ok a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+            }
+            
+            .ok button:hover,
+            a:hover {
+                opacity: 0.7;
+            }
+            
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+            /* Clear floats after the columns */
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
             }
