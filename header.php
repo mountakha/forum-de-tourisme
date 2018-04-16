@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -7,6 +10,11 @@
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
     <title>Document</title>
 </head>
 
@@ -15,13 +23,25 @@
 
 
     <div class="topnav">
-        <a class="active" href="#home"><img src="./image/if_circle-o-notch_1608484.png" alt="" srcset="" ></a>
-        <a href="#about">Profil</a>
-        <a href="#contact">Signup IN/login</a>
-        <div class="search-container">
-            <form action="/action_page.php">
+        <a class="active" href="./index.php"><img src="./image/logo.png" alt="" srcset="" style="width:75px;height:40px;" ></a>
+        <a href="./profile.php">Profil</a>
+        <a href="./inscription.php">Signup</a>
+        <a href="./register.php">login</a>
+      
+        <div class="dropdown" style="float:right;">
+    <button class="dropbtn">Admin
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./register.php">login</a>
+      <a href="./profile.php">Profil</a>
+     </div>
+  </div> 
+        
+        <div class="search-container" > 
+            <form action="#">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i>Recherche</button>
+                <button type="submit" style="background:#242831;"><i class="fa fa-search"></i></button>
             </form>
         </div>
     </div>
